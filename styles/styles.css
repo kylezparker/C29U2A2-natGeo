@@ -1,0 +1,91 @@
+/* global */
+:root{
+    --primary: #ffcc00;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+    color:white;
+    font-family: 'Lato', sans-serif;
+}
+img{
+    max-width:100%;
+}
+a{
+    text-decoration: none;
+}
+/* utilities */
+
+/* menu, can use align items and justify content after you use display flex */
+nav.menu{
+    background-color: white;
+    height:50px;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+}
+nav.menu img{
+    height:30px;
+    padding-left:20px;
+}
+.link-glass,.link-renew,.link-menu,.logo{
+    display:none;
+}
+.link-login{
+text-transform: uppercase;
+font-weight:700;
+letter-spacing:4px;
+font-size:14px;
+color:black;
+}
+.link-subs{
+background-color:black;
+color:white;
+text-transform: uppercase;
+font-weight:700;
+letter-spacing:3px;
+font-size:12px;
+padding:17px;
+}
+/* trans from left to right, research */
+.link-subs:hover{
+    background-color:var(--primary);
+    color:black;
+}
+.link-angles{
+color:black;
+}
+nav.menu a:last-of-type{
+    margin-right:30px;
+}
+/* header, will be display flex etc where text align is */
+header{
+    text-align:center;
+    height: 230;
+}
+h1{
+    text-transform: uppercase;
+    padding:10px 0 10px 0;
+    font-size:40px;
+}
+header p{
+    text-align: center;
+    padding-bottom:15px;
+    margin-right:20%;
+    margin-left:20%;
+}
+header p span{ 
+    text-decoration:underline #ffcc00;
+}
+/* use border, border-bottom, instead of hr. "solid var" 4px solid var(--primary). margin:0px auto . width 6%. padding bottom  */
+/* teachers code */
+/*  */
+header span:hover{
+    background-color: var(--primary);
+    color:black;
+    cursor: pointer;
+}
